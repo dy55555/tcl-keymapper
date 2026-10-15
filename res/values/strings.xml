@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">按键改键器</string>
+    <string name="label_pick">选择应用</string>
+    <!-- 无障碍配置里 android:description 引用的，系统设置页会显示这句 -->
+    <string name="desc">把遥控器上三个专用键（哔哩哔哩 / 奇异果TV / 应用商店）重定向到你指定的app。</string>
+
+    <string name="main_hint">选中一行按确定键，可更换该键打开的应用</string>
+    <string name="main_foot">改完直接按返回键退出即可，无需重启</string>
+    <string name="original">原厂（未改）</string>
+    <string name="reset_all">全部恢复出厂</string>
+
+    <string name="picker_title">为 %1$s 选择要打开的应用</string>
+    <string name="picker_clear">恢复原厂行为（不拦截这个键）</string>
+    <string name="picker_foot">绿色表示当前已生效</string>
+
+    <string name="about">按键改键器 v1.13 · 作者 22512199@qq.com</string>
+
+    <!-- ================= 免责声明 ================= -->
+    <!-- ↓↓↓ disc_p1_head ～ disc_p2_body 为用户提供的原文，一字未改 ↓↓↓
+         （唯一例外：disc_p1_body 开头那句「本应用仅适用于…」是 2026-10-11
+           用户后补的，加在原正文之前当作第一段。原文本身仍未改动一字。）-->
+    <string name="disc_title">免责声明</string>
+    <string name="disc_btn">免责声明</string>
+    <string name="disc_p1_head">一、关于这个应用</string>
+    <string name="disc_p1_body">本应用仅适用于TCL/雷鸟智能电视的红外遥控器（对照前面按键图），其他遥控器未做适配和测试。\n购买电视时商家并未提前告知遥控器上的按键有捆绑应用，用起来有些不便。于是作者写了这个小工具，可将这三个被绑死的按键映射到自定义应用，改善自己的使用体验。本应用仅供个人自用，非出于商业化目的，不针对也不侵犯任何品牌方的权益，与电视厂商及所涉及的第三方应用之间均无任何关联。任何人不得将其用于商业化用途，由此产生的一切后果由使用者自行承担。</string>
+    <string name="disc_p2_head">二、关于打赏</string>
+    <string name="disc_p2_body">做这个小工具并没有花作者很多时间和代价，主要还是为了解决自己的问题。\n如果你也觉得它改善了你的使用体验、对作者的做法表示认同的话，也可以小小打赏一下表示支持。\n纯属心意，完全随意，不打赏也完全不影响使用。</string>
+    <!-- ↑↑↑ 用户提供的原文到此为止 ↑↑↑ -->
+
+    <string name="disc_p3_head">三、源码地址</string>
+    <string name="disc_p3_body">本应用完全开源，源码与详细说明都在这里，有需要自取：</string>
+    <!-- 仓库名 2026-10-11 定为 tcl-keymapper（原规划 tv-remote-toolkit 已废，
+         改成按键改键器 / 数字键盘两个互相独立的项目） -->
+    <string name="disc_repo">github.com/dy55555/tcl-keymapper</string>
+
+    <string name="disc_wechat">微信</string>
+    <string name="disc_alipay">支付宝</string>
+    <string name="disc_noimg">收款码还没放进来\n（把 qr_wechat.png / qr_alipay.png 放进 res/drawable/ 重新打包）</string>
+    <string name="disc_close">关闭</string>
+
+    <!-- 未启用时的提示：深色底 + 浅琥珀字，醒目但不刺眼 -->
+    <string name="warn_not_enabled">按键服务还没开启，现在改的应用不会生效。请先用电脑运行「一键开启无障碍.bat」把它打开。</string>
+</resources>

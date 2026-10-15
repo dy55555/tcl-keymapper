@@ -1,0 +1,33 @@
+# 构建产物
+build/
+*.apk
+!tools/**/*.apk
+
+# 工具链（体积大，且有各自的授权协议，不随仓库分发）
+# 注意：这里必须是 toolchain/* 而不是 toolchain/ ——
+# git 的规则是「父目录一旦被整体排除，里面的 ! 例外就不生效」，
+# 所以写成 toolchain/ 时，下面那行 !toolchain/README.md 会被无声吃掉，
+# 而主 README 恰好引用了它。改成 toolchain/* 后目录本身不被排除，
+# 例外才能正常工作。
+toolchain/*
+!toolchain/README.md
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 构建中间产物
+*.class
+*.dex
+R.java
+
+# 安装脚本用到的 adb（platform-tools 三件套，体积大，不随仓库分发）
+tools/adb.exe
+tools/AdbWinApi.dll
+tools/AdbWinUsbApi.dll
+# 一键安装脚本记下的电视 IP
+tools/.tv-ip.txt

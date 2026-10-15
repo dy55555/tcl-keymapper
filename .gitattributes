@@ -1,0 +1,23 @@
+# 默认：让 git 自动判断文本/二进制，并在仓库里统一存成 LF
+* text=auto
+
+# Shell 脚本必须保持 LF —— 用 CRLF 的 .sh 在 bash 下会因为行尾的 \r 直接报错
+*.sh   text eol=lf
+build.sh text eol=lf
+
+# Windows 批处理必须是 CRLF，否则可能执行异常
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 源码 / 配置 / 文档统一 LF
+*.java text eol=lf
+*.xml  text eol=lf
+*.md   text eol=lf
+
+# 二进制，不要做任何换行转换
+*.apk  binary
+*.jar  binary
+*.exe  binary
+*.png  binary
+*.jpg  binary
+*.keystore binary
